@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AUTOML BY PRAKHAR JAIN</title>
+    <!-- Latest compiled and minified CSS -->
+</head>
+<style>
+    .text-Blue{
+        color:blue
+    }
+</style>
+
+<body style="background-color:white">
+<h2 class="text-Blue"> Generate your EDA Report </h2>
+<br>
+
+
+<form class="form-inline" method="Post" action="/test">
+  <div class="form-group">
+    <div class="input-group">
+
+    </div>
+    <button type="submit" class="btn btn-default" style="background-color: purple; color: white; font-size: 20px;">GENERATE AUTO EDA REPORT</button>
+  </div>
+</form>
+<br>
+
+  <hr>
+
+<h1> Please Select Your ML Problem [Classification/Regression] </h1>
+
+<form action="/Regressiontarget" method="post">
+  <button type="submit" style="background-color: red; color: white; font-size: 20px;">Regression</button>
+</form>
+<br>
+<form action="/Classificationtarget" method="post">
+  <button type="submit" style="background-color: red; color: white; font-size: 20px;">Classification </button>
+</form>
+
+<br>
+<br>
+<hr>
+
+<h2 class="text-Blue"> Please View Your Dataset Here  </h2>
+
+
+{{ data1 | safe}}
+
+</body>
+</html>
